@@ -49,3 +49,33 @@ body {
     margin-top: 25px;
     margin-bottom: 25px; 
 }
+
+.food-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+figcaption {
+    padding-left: 20px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 152.9%;
+    letter-spacing: 1.08px;
+    margin-top: 10px;
+}
+
+strong {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}

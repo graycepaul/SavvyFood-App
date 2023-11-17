@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 /* ============== style for mobile phone on green background ============== */
+/*
 .green__card{
     width: 500px;
     height: 618px;
@@ -21,4 +22,191 @@
     border-radius: 37px;
     border: 1px;
     position: absolute;
+}
+*/ 
+.footer {
+    width: 1442px;
+    height: 474px;
+ }
+
+ .wrapper {
+    background-color: #172E15;
+    display: grid;
+    grid-template-columns: repeat(3,0.7fr);
+    grid-auto-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    color: #e5e2e2;
+    margin-top: 30vh;
+    width: 100vw;
+    padding-top: 30px;
+ }
+
+ .subgrid {
+    display: grid; 
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+    grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    "ten eleven twelve"
+    "thirteen thirteen thirteen";
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .logo-name {
+    color: #32CD32;
+    text-shadow: 0px 4px 4px rgba(17, 33, 16, 0.64);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    width: 173px;
+    height: 26px;
+   justify-self: center;
+    
+ }
+ .logo{
+    width: 40px;
+    height: 32px;
+    background: url(<path-to-image>), / cover no-repeat;
+ }
+
+ .subgrid p {
+    color: #d5d3d3;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 160.4%;
+ }
+ .newsletter {
+    width: 306px;
+    height: 31px;
+    flex-direction: column;
+    align-self: center;
+    justify-self: start;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.4%;
+ }
+
+ .thirteen {
+    grid-area: thirteen;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.4%; 
+    padding-top: 70px;
+    align-self: end;
+ }
+
+ .form {
+    display: flex;
+    border-radius: 30px;
+    mix-blend-mode: lighten;
+    width: 373px;
+    background: rgba(255, 255, 255, 0.20);
+    height: 46px;
+    margin-top: 20px;
+    justify-self: start;
+    align-self: start;
+ }
+
+ .email{
+    padding: 20px 0;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 31px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .button{
+    border-radius: 30px;
+    background: #32CD32;
+    width: 171px;
+    height: 46px;
+    margin-left: 93px;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.4%;
+ }
+
+ .motto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.4%;    
+    height: 180px;
+    justify-self: center;
+    align-self: start;
+ }
+.address{
+    justify-self: center;
+    
+}
+ .address p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 185.4%; 
+    letter-spacing: 1.5px;
+    width: 200px;
+
+}
+
+.address h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 185.4%;
+    align-self: end;
+    justify-self: end;
+}
+
+@media screen (max-width:1400px){
+    .wrapper{
+        width: 80vw;
+    }
+}
+@media screen (max-width:1200px) {
+    .wrapper{
+        width: 60vw;
+    }
+}
+@media screen (max-width:992px) {
+    .wrapper{
+        width: 50vw;
+    }
+}
+@media screen (max-width:768px) {
+    .wrapper{
+        width: 40vw;
+    }
+}
+@media screen (max-width:576px) {
+    .wrapper{
+        width: 30vw;
+    }
 }
